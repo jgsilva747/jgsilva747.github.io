@@ -103,7 +103,7 @@ const Team = () => {
                         className="max-h-full max-w-full object-contain"
                       />
                     </div>
-                    <Badge variant="outline">{supporter.type}</Badge>
+                    <Badge variant="outline" className="text-black border-black">{supporter.type}</Badge>
                   </CardContent>
                 </Card>
               </a>
