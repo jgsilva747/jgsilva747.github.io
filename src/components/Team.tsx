@@ -5,20 +5,20 @@ import { GraduationCap, Building, Users } from "lucide-react";
 const Team = () => {
   const founders = [
     {
-      name: "Dr. Sarah Chen",
-      role: "CEO & Co-Founder",
+      name: "Álvaro Patrício",
+      role: "CTO & Co-Founder",
       education: "PhD Computer Science, MIT",
       background: "Former navigation systems engineer at NASA JPL"
     },
     {
-      name: "Dr. Michael Rodriguez",
-      role: "CTO & Co-Founder", 
+      name: "Frederico Baptista",
+      role: "CEO & Co-Founder", 
       education: "PhD Robotics, Stanford",
       background: "10 years in autonomous systems at Google X"
     },
     {
-      name: "Dr. Emily Zhang",
-      role: "Head of AI & Co-Founder",
+      name: "João Silva",
+      role: "CTO & Co-Founder",
       education: "PhD Machine Learning, Carnegie Mellon",
       background: "Former principal scientist at Amazon Robotics"
     }
