@@ -5,24 +5,24 @@ import { GraduationCap, Building, Users } from "lucide-react";
 const Team = () => {
   const founders = [
     {
-      name: "Álvaro Patrício",
-      role: "CTO & Co-Founder",
-      education: "PhD Computer Science, MIT",
-      background: "Former navigation systems engineer at NASA JPL",
-      image: "/_alvaro.png"
-    },
-    {
       name: "Frederico Baptista",
       role: "CEO & Co-Founder", 
-      education: "PhD Robotics, Stanford",
-      background: "10 years in autonomous systems at Google X",
+      education: "MSc Aerospace Systems Engineering, ISAE-SUPAERO",
+      background: "Project Management at Airbus",
       image: "/_fred.png"
+    },
+    {
+      name: "Álvaro Patrício",
+      role: "CTO & Co-Founder",
+      education: "MSc Aerospace Engineering, La Sapienza",
+      background: "Computer Vision at ESA",
+      image: "/_alvaro.png"
     },
     {
       name: "João Silva",
       role: "CTO & Co-Founder",
-      education: "PhD Machine Learning, Carnegie Mellon",
-      background: "Former principal scientist at Amazon Robotics",
+      education: "MSc Cum Laude Aerospace Engineering, TU Delft",
+      background: "Spacecraft Navigation at DLR",
       image: "/_joao.png"
     }
   ];
@@ -30,18 +30,21 @@ const Team = () => {
   const supporters = [
     {
       type: "Incubator",
-      name: "TechStars",
-      description: "Accelerating our growth in autonomous systems"
+      name: "ISAE-SUPAERO",
+      logo: "/_isae.png",
+      url: "https://www.isae-supaero.fr/"
     },
     {
       type: "Investor",
-      name: "Andreessen Horowitz",
-      description: "Leading our Series A funding round"
+      name: "Project Europe",
+      logo: "/_proj_europe.png",
+      url: "https://www.projecteurope.co/"
     },
     {
       type: "Partner",
-      name: "DARPA",
-      description: "Supporting research in GPS-denied navigation"
+      name: "Heartfelt Capital",
+      logo: "/_heartfelt.png",
+      url: "https://heartfelt.capital/"
     }
   ];
 
@@ -90,16 +93,16 @@ const Team = () => {
           <h3 className="text-2xl font-bold mb-8 text-center">Our Support Network</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {supporters.map((supporter, index) => (
-              <Card key={index} className="border-border bg-card shadow-card">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Building className="w-8 h-8 text-accent-foreground" />
-                  </div>
-                  <Badge variant="outline" className="mb-3">{supporter.type}</Badge>
-                  <h4 className="font-bold text-lg mb-2">{supporter.name}</h4>
-                  <p className="text-sm text-muted-foreground">{supporter.description}</p>
-                </CardContent>
-              </Card>
+              <a key={index} href={supporter.url} target="_blank" rel="noopener noreferrer">
+                <Card className="border-border bg-card shadow-card hover:scale-105 transition-transform">
+                  <CardContent className="p-6 text-center flex flex-col items-center">
+                    <div className="w-full h-24 flex items-center justify-center mb-4">
+                      <img src={supporter.logo} alt={supporter.name} className="max-h-full object-contain" />
+                    </div>
+                    <Badge variant="outline">{supporter.type}</Badge>
+                  </CardContent>
+                </Card>
+              </a>
             ))}
           </div>
         </div>
