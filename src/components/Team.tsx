@@ -7,21 +7,21 @@ const Team = () => {
     {
       name: "Frederico Baptista",
       role: "CEO & Co-Founder", 
-      education: "MSc Aerospace Systems Engineering, ISAE-SUPAERO",
+      education: "MSc Aerospace Systems Engineering",
       background: "Project Management at Airbus",
       image: "/_fred.png"
     },
     {
       name: "Álvaro Patrício",
       role: "CTO & Co-Founder",
-      education: "MSc Aerospace Engineering, La Sapienza",
+      education: "MSc Aerospace Engineering",
       background: "Computer Vision at ESA",
       image: "/_alvaro.png"
     },
     {
       name: "João Silva",
       role: "CTO & Co-Founder",
-      education: "MSc Cum Laude Aerospace Engineering, TU Delft",
+      education: "MSc Cum Laude Aerospace Engineering",
       background: "Spacecraft Navigation at DLR",
       image: "/_joao.png"
     }
@@ -95,7 +95,7 @@ const Team = () => {
               <a key={index} href={supporter.url} target="_blank" rel="noopener noreferrer">
                 <Card className="border-border bg-white text-black shadow-md hover:shadow-lg hover:-translate-y-1 transition-all h-full">
                   <CardContent className="p-6 text-center flex flex-col items-center justify-between h-full">
-                    <div className="w-40 h-20 flex items-center justify-center mb-6">
+                    <div className="w-50 h-25 flex items-center justify-center mb-6">
                       <img src={supporter.logo} alt={supporter.name} className="max-h-full max-w-full object-contain" />
                     </div>
                     <Badge variant="outline" className="text-black border-black">{supporter.type}</Badge>
