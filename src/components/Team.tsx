@@ -42,7 +42,7 @@ const Team = () => {
       url: "https://www.projecteurope.co/"
     },
     {
-      type: "Partner",
+      type: "Investor",
       name: "Heartfelt Capital",
       logo: "/_heartfelt.png",
       url: "https://heartfelt.capital/"
