@@ -21,7 +21,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="p-2 rounded bg-accent">
-              <img src="/_zero_logo.jpg" alt="Logo Icon" className="w-5 h-5" />
+              <img src="/_zero_logo.jpg" alt="Logo Icon" className="w-10 h-10" />
             </div>
             <span className="font-bold text-xl">Zero Industries</span>
             <Badge variant="secondary" className="text-xs">Made in Europe</Badge>
