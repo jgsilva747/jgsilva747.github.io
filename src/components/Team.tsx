@@ -2,16 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap } from "lucide-react";
 
-<CardContent className="p-6 flex flex-col items-center justify-center h-full">
-  <div className="flex items-center justify-center w-full h-32 mb-4">
-    <img
-      src={supporter.logo}
-      alt={supporter.name}
-      className="max-h-full max-w-full object-contain"
-    />
-  </div>
-  <Badge variant="outline">{supporter.type}</Badge>
-</CardContent>
 
 const Team = () => {
   const founders = [
