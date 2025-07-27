@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Building, Users } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 const Team = () => {
   const founders = [
@@ -51,11 +51,10 @@ const Team = () => {
   return (
     <section className="py-24 px-6 bg-gradient-subtle">
       <div className="max-w-6xl mx-auto">
+        
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <Badge variant="secondary" className="mb-4">
-            Our Team
-          </Badge>
+          <Badge variant="secondary" className="mb-4">Our Team</Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-primary">Expert Leadership</span>
           </h2>
@@ -68,9 +67,9 @@ const Team = () => {
         {/* Founding Team */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-center">Founding Team</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {founders.map((founder, index) => (
-              <Card key={index} className="border-border bg-card shadow-card">
+              <Card key={index} className="border-border bg-card shadow-card hover:shadow-md hover:-translate-y-1 transition-all">
                 <CardContent className="p-6 text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
                     <img src={founder.image} alt={founder.name} className="w-full h-full object-cover" />
@@ -91,21 +90,22 @@ const Team = () => {
         {/* Support & Investment */}
         <div>
           <h3 className="text-2xl font-bold mb-8 text-center">Our Support Network</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {supporters.map((supporter, index) => (
               <a key={index} href={supporter.url} target="_blank" rel="noopener noreferrer">
-                <Card className="border-border bg-white shadow-card hover:scale-105 transition-transform">
-                  <CardContent className="p-6 text-center flex flex-col items-center">
-                    <div className="w-full h-24 flex items-center justify-center mb-4">
-                      <img src={supporter.logo} alt={supporter.name} className="max-h-full object-contain" />
+                <Card className="border-border bg-white text-black shadow-md hover:shadow-lg hover:-translate-y-1 transition-all h-full">
+                  <CardContent className="p-6 text-center flex flex-col items-center justify-between h-full">
+                    <div className="w-40 h-20 flex items-center justify-center mb-6">
+                      <img src={supporter.logo} alt={supporter.name} className="max-h-full max-w-full object-contain" />
                     </div>
-                    <Badge variant="outline">{supporter.type}</Badge>
+                    <Badge variant="outline" className="text-black border-black">{supporter.type}</Badge>
                   </CardContent>
                 </Card>
               </a>
             ))}
           </div>
         </div>
+        
       </div>
     </section>
   );
