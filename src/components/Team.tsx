@@ -8,19 +8,22 @@ const Team = () => {
       name: "Álvaro Patrício",
       role: "CTO & Co-Founder",
       education: "PhD Computer Science, MIT",
-      background: "Former navigation systems engineer at NASA JPL"
+      background: "Former navigation systems engineer at NASA JPL",
+      image: "/_alvaro.png"
     },
     {
       name: "Frederico Baptista",
       role: "CEO & Co-Founder", 
       education: "PhD Robotics, Stanford",
-      background: "10 years in autonomous systems at Google X"
+      background: "10 years in autonomous systems at Google X",
+      image: "/_fred.png"
     },
     {
       name: "João Silva",
       role: "CTO & Co-Founder",
       education: "PhD Machine Learning, Carnegie Mellon",
-      background: "Former principal scientist at Amazon Robotics"
+      background: "Former principal scientist at Amazon Robotics",
+      image: "/_joao.png"
     }
   ];
 
@@ -66,8 +69,8 @@ const Team = () => {
             {founders.map((founder, index) => (
               <Card key={index} className="border-border bg-card shadow-card">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Users className="w-8 h-8 text-accent-foreground" />
+                  <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+                    <img src={founder.image} alt={founder.name} className="w-full h-full object-cover" />
                   </div>
                   <h4 className="font-bold text-lg mb-1">{founder.name}</h4>
                   <p className="text-primary font-medium mb-3">{founder.role}</p>
