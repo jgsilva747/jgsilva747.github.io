@@ -20,13 +20,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="rounded bg-accent">
-              <img src="/_zero_logo.jpg" alt="Logo Icon" className="w-10 h-10" />
-            </div>
-            <span className="font-bold text-xl">Zero Industries</span>
-            <Badge variant="outline" className="text-xs py-0 px-1 h-auto leading-none">
-              Made in Europe
-            </Badge>
+            <a href="/" className="flex items-center gap-2">
+              <div className="rounded bg-accent">
+                <img src="/_zero_logo.jpg" alt="Logo Icon" className="w-10 h-10" />
+              </div>
+              <span className="font-bold text-xl">Zero Industries</span>
+            </a>
           </div>
 
           {/* Desktop navigation */}
