@@ -69,7 +69,9 @@ const Navigation = () => {
             >
               Contact
             </button>
-            <Button size="sm">
+            <Button size="sm"
+              onClick={() => scrollToSection('contact')}
+            >
               Get in Touch
             </Button>
           </div>
@@ -122,7 +124,9 @@ const Navigation = () => {
             >
               Contact
             </button>
-            <Button size="sm" className="w-full mt-4">
+            <Button size="sm" className="w-full mt-4"
+              onClick={() => scrollToSection('contact')}
+            >
               Get in Touch
             </Button>
           </div>
