@@ -94,7 +94,7 @@ const Team = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {supporters.map((supporter, index) => (
               <a key={index} href={supporter.url} target="_blank" rel="noopener noreferrer">
-                <Card className="border-border bg-card shadow-card hover:scale-105 transition-transform">
+                <Card className="border-border bg-white shadow-card hover:scale-105 transition-transform">
                   <CardContent className="p-6 text-center flex flex-col items-center">
                     <div className="w-full h-24 flex items-center justify-center mb-4">
                       <img src={supporter.logo} alt={supporter.name} className="max-h-full object-contain" />
