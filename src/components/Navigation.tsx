@@ -20,12 +20,15 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <a href="/" className="flex items-center gap-2">
+            <button 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="flex items-center gap-2 focus:outline-none"
+            >
               <div className="rounded bg-accent">
                 <img src="/_zero_logo.jpg" alt="Logo Icon" className="w-10 h-10" />
               </div>
               <span className="font-bold text-xl">Zero Industries</span>
-            </a>
+            </button>
           </div>
 
           {/* Desktop navigation */}
