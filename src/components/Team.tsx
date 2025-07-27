@@ -2,6 +2,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap } from "lucide-react";
 
+<CardContent className="p-6 flex flex-col items-center justify-center h-full">
+  <div className="flex items-center justify-center w-full h-32 mb-4">
+    <img
+      src={supporter.logo}
+      alt={supporter.name}
+      className="max-h-full max-w-full object-contain"
+    />
+  </div>
+  <Badge variant="outline">{supporter.type}</Badge>
+</CardContent>
+
 const Team = () => {
   const founders = [
     {
@@ -94,11 +105,15 @@ const Team = () => {
             {supporters.map((supporter, index) => (
               <a key={index} href={supporter.url} target="_blank" rel="noopener noreferrer">
                 <Card className="border-border bg-white text-black shadow-md hover:shadow-lg hover:-translate-y-1 transition-all h-full">
-                  <CardContent className="p-6 text-center flex flex-col items-center justify-between h-full">
-                    <div className="w-50 h-25 flex items-center justify-center mb-6">
-                      <img src={supporter.logo} alt={supporter.name} className="max-h-full max-w-full object-contain" />
+                  <CardContent className="p-6 flex flex-col items-center justify-center h-full">
+                    <div className="flex items-center justify-center w-full h-32 mb-4">
+                      <img
+                        src={supporter.logo}
+                        alt={supporter.name}
+                        className="max-h-full max-w-full object-contain"
+                      />
                     </div>
-                    <Badge variant="outline" className="text-black border-black">{supporter.type}</Badge>
+                    <Badge variant="outline">{supporter.type}</Badge>
                   </CardContent>
                 </Card>
               </a>
