@@ -4,6 +4,7 @@ import { Menu, X, Navigation as NavIcon } from "lucide-react";
 import { useState } from "react";
 
 const SHOW_TECHNOLOGY_BUTTON = false;
+const SHOW_CONTACT_BUTTON = false;
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -66,17 +67,19 @@ const Navigation = () => {
                 Technology
               </button>
             )}
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Contact
-            </button>
-            <Button size="sm"
-              onClick={() => scrollToSection('contact')}
-            >
-              Get in Touch
-            </Button>
+            {SHOW_CONTACT_BUTTON && (
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="text-sm font-medium hover:text-primary transition-colors"
+              >
+                Contact
+              </button>
+              <Button size="sm"
+                onClick={() => scrollToSection('contact')}
+              >
+                Get in Touch
+              </Button>
+          )}
           </div>
 
           {/* Mobile menu button */}
