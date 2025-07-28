@@ -10,14 +10,14 @@ const Hero = () => {
           <img
             src={ZeroLogo}
             alt="Zero Industries Logo"
-            className="w-2/3 md:w-1/3 mb-2"
+            className="w-2/3 md:w-1/3"
           />
           {/* Your Slogan */}
-          <p className="mt-2 text-lg italic text-muted-foreground">
+          <p className="text-xl italic text-muted-foreground">
             Zero Limits. Full autonomy.
           </p>        
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
+          <p className="mt-1 text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
             Developing breakthrough navigation technology for drones operating in GPS-denied environments. 
             Our autonomous systems enable reliable navigation where traditional methods fail.
           </p>
