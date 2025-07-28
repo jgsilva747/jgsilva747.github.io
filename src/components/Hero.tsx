@@ -4,25 +4,16 @@ import ZeroLogo from "../../public/Zero_Logo.svg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-subtle">
-      {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        <div className="space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded bg-card border border-border">
-            <Navigation className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Autonomous Drone Navigation</span>
-          </div>
-          
-          <div className="flex flex-col items-center justify-center min-h-screen text-center">
-            <img
-              src={ZeroLogo}
-              alt="Zero Industries Logo"
-              className="w-1/3 mb-4"
+    <section className="relative bg-gradient-to-b from-background to-secondary/10 overflow-hidden">
+      <div className="container mx-auto px-4 py-20">
+        <div className="flex flex-col items-center justify-center min-h-screen text-center">
+          <img
+            src={ZeroLogo}
+            alt="Zero Industries Logo"
+            className="w-1/3 mb-4"
           />
           <p className="text-xl">GPS-free navigation</p>
-        </div>
-          
+        
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Developing breakthrough navigation technology for drones operating in GPS-denied environments. 
