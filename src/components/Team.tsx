@@ -13,21 +13,24 @@ const Team = () => {
       role: "CEO & Co-Founder", 
       education: "MSc Aerospace Systems Engineering",
       background: "Project Management at Airbus",
-      image: "/_fred.png"
+      image: "/_fred.png",
+      linkedin: "https://www.linkedin.com/in/frederico-baptista-aerospace/"
     },
     {
       name: "Álvaro Patrício",
       role: "CTO & Co-Founder",
       education: "MSc Aerospace Engineering",
       background: "Computer Vision at ESA",
-      image: "/_alvaro.png"
+      image: "/_alvaro.png",
+      linkedin: "https://www.linkedin.com/in/%C3%A1lvaropatricio/"
     },
     {
       name: "João Silva",
       role: "CTO & Co-Founder",
       education: "MSc Cum Laude Aerospace Engineering",
       background: "Spacecraft Navigation at DLR",
-      image: "/_joao.png"
+      image: "/_joao.png",
+      linkedin: "https://www.linkedin.com/in/joaogdbs/"
     }
   ];
 
@@ -77,20 +80,28 @@ const Team = () => {
           <h3 className="text-2xl font-bold mb-8 text-center">Founding Team</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {founders.map((founder, index) => (
-              <Card key={index} className="border-border bg-card shadow-card hover:shadow-md hover:-translate-y-1 transition-all">
-                <CardContent className="p-6 text-center">
-                  <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
-                    <img src={founder.image} alt={founder.name} className="w-full h-full object-cover" />
-                  </div>
-                  <h4 className="font-bold text-lg mb-1">{founder.name}</h4>
-                  <p className="text-primary font-medium mb-3">{founder.role}</p>
-                  <div className="flex items-center justify-center gap-2 mb-2">
-                    <GraduationCap className="w-4 h-4 text-muted-foreground" />
-                    <p className="text-sm text-muted-foreground">{founder.education}</p>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{founder.background}</p>
-                </CardContent>
-              </Card>
+              // Wrap the Card component with an <a> tag
+              <a 
+                key={index} // The key now goes on the outermost element
+                href={founder.linkedin} 
+                target="_blank" // Opens the link in a new tab
+                rel="noopener noreferrer" // Important for security
+              >
+                <Card className="border-border bg-card shadow-card hover:shadow-md hover:-translate-y-1 transition-all h-full">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+                      <img src={founder.image} alt={founder.name} className="w-full h-full object-cover" />
+                    </div>
+                    <h4 className="font-bold text-lg mb-1">{founder.name}</h4>
+                    <p className="text-primary font-medium mb-3">{founder.role}</p>
+                    <div className="flex items-center justify-center gap-2 mb-2">
+                      <GraduationCap className="w-4 h-4 text-muted-foreground" />
+                      <p className="text-sm text-muted-foreground">{founder.education}</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground">{founder.background}</p>
+                  </CardContent>
+                </Card>
+              </a>
             ))}
           </div>
         </div>
