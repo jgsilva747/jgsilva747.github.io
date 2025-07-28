@@ -11,23 +11,16 @@ const Hero = () => {
             src={ZeroLogo}
             alt="Zero Industries Logo"
             className="w-2/3 md:w-1/3 mb-2"
-          />        
+          />
+          {/* Your Slogan */}
+          <p className="mt-2 text-lg italic text-muted-foreground">
+            Zero Limits. Full autonomy.
+          </p>        
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
             Developing breakthrough navigation technology for drones operating in GPS-denied environments. 
             Our autonomous systems enable reliable navigation where traditional methods fail.
           </p>
-          
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button size="lg" className="group">
-              View Our Tests
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Learn More
-            </Button>
-          </div>
           
           {/* Feature highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 max-w-4xl mx-auto">
