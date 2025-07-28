@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Navigation, Shield, Zap } from "lucide-react";
+import ZeroLogo from "../public/Zero_Logo.svg";
 
 const Hero = () => {
   return (
@@ -13,14 +14,14 @@ const Hero = () => {
             <span className="text-sm font-medium">Autonomous Drone Navigation</span>
           </div>
           
-          {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            <span className="text-primary">
-              Zero Industries
-            </span>
-            <br />
-            <span className="text-foreground">GPS-Free Navigation</span>
-          </h1>
+          <div className="flex flex-col items-center justify-center min-h-screen text-center">
+            <img
+              src={ZeroLogo}
+              alt="Zero Industries Logo"
+              className="w-1/3 mb-4"
+          />
+          <p className="text-xl">GPS-free navigation</p>
+        </div>
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
