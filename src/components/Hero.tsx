@@ -17,7 +17,7 @@ const Hero = () => {
             Zero Limits. Full autonomy.
           </p>        
           {/* Subheading */}
-          <p className="mt-16 text-l md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
+          <p className="mt-8 text-l md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
             Developing breakthrough navigation technology for drones operating in GPS-denied environments. 
             Our autonomous systems enable reliable navigation where traditional methods fail.
           </p>
