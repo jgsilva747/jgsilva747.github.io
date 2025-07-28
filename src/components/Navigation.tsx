@@ -79,7 +79,7 @@ const Navigation = () => {
               >
                 Get in Touch
               </Button>
-          )}
+            )}
           </div>
 
           {/* Mobile menu button */}
