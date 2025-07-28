@@ -6,6 +6,8 @@ import Team from "@/components/Team";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 
+const SHOW_TECHNOLOGY = false;
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -23,9 +25,11 @@ const Index = () => {
         <section id="team">
           <Team />
         </section>
-        // <section id="about">
-        //  <About />
-        // </section>
+        {SHOW_TECHNOLOGY && (
+          <section id="about">
+            <About />
+            </section>
+        )}
         <section id="contact">
           <Contact />
         </section>
