@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 
 const SHOW_TECHNOLOGY = false;
+const SHOW_CONTACT = false;
 
 const Index = () => {
   return (
@@ -30,9 +31,11 @@ const Index = () => {
             <About />
             </section>
         )}
-        <section id="contact">
-          <Contact />
-        </section>
+        {SHOW_CONTACT && (
+          <section id="contact">
+            <Contact />
+          </section>
+        )}
       </main>
     </div>
   );
