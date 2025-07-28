@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Navigation, Shield, Zap } from "lucide-react";
-import ZeroLogo from "../public/Zero_Logo.svg";
+import ZeroLogo from "../../public/Zero_Logo.svg";
 
 const Hero = () => {
   return (
