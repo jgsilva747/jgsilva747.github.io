@@ -13,9 +13,10 @@ const Hero = () => {
             className="w-2/3 md:w-1/3"
           />
           {/* Your Slogan */}
-          <p className="text-2xl italic text-muted-foreground mt-2 md:-mt-[60px]">
-            Smarter systems. Stronger defence.
-          </p>        
+          <p className="text-2xl italic text-muted-foreground -mt-4 md:-mt-[60px]">
+            Smarter systems.
+            <br className="md:hidden" /> Stronger defence.
+          </p>       
           {/* Subheading */}
           <p className="mt-8 text-l md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
             Developing breakthrough navigation technology for drones operating in GPS-denied environments. 
