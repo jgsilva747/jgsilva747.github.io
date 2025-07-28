@@ -60,7 +60,7 @@ const Team = () => {
             <span className="text-primary">Expert Leadership</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Our founding team combines experience in computer vision,
+            Our founding team combines experience in computer vision,\n
             drones, navigation technology, and uncertainty propagation.
           </p>
         </div>
