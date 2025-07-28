@@ -91,7 +91,7 @@ const AlgorithmShowcase = () => {
               <div className="text-center mt-4">
                 <Badge 
                   variant="secondary" 
-                  className="text-base font-semibold px-5 py-3 rounded-full shadow-md bg-primary text-primary-foreground"
+                  className="text-base font-semibold px-5 py-3 rounded-full shadow-md bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground"
                 >
                   {test.avgAccuracy}
                 </Badge>
