@@ -3,6 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Menu, X, Navigation as NavIcon } from "lucide-react";
 import { useState } from "react";
 
+const SHOW_TECHNOLOGY_BUTTON = false;
+
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -56,12 +58,14 @@ const Navigation = () => {
             >
               Team
             </button>
-            // <button 
-            //  onClick={() => scrollToSection('about')}
-            //  className="text-sm font-medium hover:text-primary transition-colors"
-            // >
-            //  Technology
-            // </button>
+            {SHOW_TECHNOLOGY_BUTTON && (
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-sm font-medium hover:text-primary transition-colors"
+              >
+                Technology
+              </button>
+            )}
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-sm font-medium hover:text-primary transition-colors"
