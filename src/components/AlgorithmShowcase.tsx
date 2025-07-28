@@ -1,5 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 
+
+const description = "Test";
+
 const flightTests = [
   {
     title: "Open Field in Toulouse",
@@ -37,6 +40,23 @@ const AlgorithmShowcase = () => {
   return (
     <section className="py-20 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <Badge variant="secondary" className="mb-4">Our Tests</Badge>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <span className="text-primary">Initial Test Results</span>
+          </h2>
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            {description.split('\n').map((line, index) => (
+              <span key={index}>
+                {line}
+                <br />
+              </span>
+            ))}
+          </p>
+        </div>
+
         {flightTests.map((test, index) => (
           <div key={index} className="rounded-lg overflow-hidden shadow-lg bg-card border border-border flex flex-col h-full">
 
