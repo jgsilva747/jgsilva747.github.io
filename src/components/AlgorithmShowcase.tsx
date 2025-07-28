@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 
 
-const description = "Test";
+const description = "Sub-50 m accuracy accross three initial tests,\nwith 2 months of development and a 500EUR budget.";
 
 const flightTests = [
   {
@@ -39,7 +39,7 @@ const flightTests = [
 const AlgorithmShowcase = () => {
   return (
     <section className="py-20 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -56,6 +56,9 @@ const AlgorithmShowcase = () => {
             ))}
           </p>
         </div>
+
+      </div>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 
         {flightTests.map((test, index) => (
           <div key={index} className="rounded-lg overflow-hidden shadow-lg bg-card border border-border flex flex-col h-full">
