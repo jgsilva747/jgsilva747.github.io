@@ -13,7 +13,7 @@ const Hero = () => {
             className="w-2/3 md:w-1/3"
           />
           {/* Your Slogan */}
-          <p className="text-2xl italic text-muted-foreground -mt-[60px]">
+          <p className="text-2xl italic text-muted-foreground mt-2 md:-mt-[60px]">
             Smarter systems. Stronger defence.
           </p>        
           {/* Subheading */}
