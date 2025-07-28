@@ -3,6 +3,9 @@ import { Badge } from "@/components/ui/badge";
 import { GraduationCap } from "lucide-react";
 
 
+const description = "Our founding team combines experience in computer vision,\ndrones, navigation technology, and uncertainty propagation.";
+
+
 const Team = () => {
   const founders = [
     {
@@ -60,8 +63,12 @@ const Team = () => {
             <span className="text-primary">Expert Leadership</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Our founding team combines experience in computer vision,\n
-            drones, navigation technology, and uncertainty propagation.
+            {description.split('\n').map((line, index) => (
+              <span key={index}>
+                {line}
+                <br />
+              </span>
+            ))}
           </p>
         </div>
 
