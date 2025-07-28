@@ -13,7 +13,7 @@ const Navigation = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+      setIsMenuOpen(false); // Close menu after clicking a link
     }
   };
 
@@ -84,7 +84,16 @@ const Navigation = () => {
             )}
           </div>
 
-          {/* Mobile navigation */}
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
+
+        {/* Mobile navigation - UPDATED SECTION */}
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-4 border-t border-border">
             <button 
