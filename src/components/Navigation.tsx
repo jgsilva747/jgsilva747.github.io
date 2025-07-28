@@ -25,7 +25,7 @@ const Navigation = () => {
               className="flex items-center gap-2 focus:outline-none"
             >
               <div className="rounded">
-                <img src="/Zero_Logo.svg" alt="Logo Icon" className="w-20 h-20" />
+                <img src="/Zero_Symbol.svg" alt="Logo Icon" className="w-20 h-20" />
               </div>
             </button>
           </div>
