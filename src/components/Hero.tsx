@@ -13,11 +13,11 @@ const Hero = () => {
             className="w-2/3 md:w-1/3"
           />
           {/* Your Slogan */}
-          <p className="text-2xl italic text-muted-foreground -mt-5">
+          <p className="text-2xl italic text-muted-foreground -mt-15">
             Zero Limits. Full autonomy.
           </p>        
           {/* Subheading */}
-          <p className="mt-6 text-l md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
+          <p className="mt-15 text-l md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
             Developing breakthrough navigation technology for drones operating in GPS-denied environments. 
             Our autonomous systems enable reliable navigation where traditional methods fail.
           </p>
