@@ -13,8 +13,8 @@ const Hero = () => {
             className="w-2/3 md:w-1/3"
           />
           {/* Your Slogan */}
-          <p className="text-3xl italic text-muted-foreground -mt-[60px]">
-            Zero Limits. Full autonomy.
+          <p className="text-2xl italic text-muted-foreground -mt-[60px]">
+            Smarter systems. Stronger defence.
           </p>        
           {/* Subheading */}
           <p className="mt-8 text-l md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
