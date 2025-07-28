@@ -11,9 +11,7 @@ const Hero = () => {
             src={ZeroLogo}
             alt="Zero Industries Logo"
             className="w-2/3 md:w-1/3 mb-2"
-          />
-          <p className="text-xl">GPS-free navigation for drones</p>
-        
+          />        
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
             Developing breakthrough navigation technology for drones operating in GPS-denied environments. 
