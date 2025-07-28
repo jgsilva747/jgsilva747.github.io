@@ -68,17 +68,19 @@ const Navigation = () => {
               </button>
             )}
             {SHOW_CONTACT_BUTTON && (
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="text-sm font-medium hover:text-primary transition-colors"
-              >
-                Contact
-              </button>
-              <Button size="sm"
-                onClick={() => scrollToSection('contact')}
-              >
-                Get in Touch
-              </Button>
+              <>
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="text-sm font-medium hover:text-primary transition-colors"
+                >
+                  Contact
+                </button>
+                <Button size="sm"
+                  onClick={() => scrollToSection('contact')}
+                >
+                  Get in Touch
+                </Button>
+              </>
             )}
           </div>
 
