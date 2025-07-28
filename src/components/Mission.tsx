@@ -6,23 +6,13 @@ const Mission = () => {
   const sections = [
     {
       icon: <Target className="w-8 h-8" />,
-      title: "Our Mission",
-      content: "To revolutionize autonomous navigation by developing breakthrough technology that enables drones to navigate reliably in GPS-denied environments, unlocking new possibilities for search and rescue, defense, and industrial applications."
+      title: "Our Mission", // Our mission is to build lightweight, cost-effective, and plug-and-play navigation solutions that provide instant, reliable positioning for troops and systems in any GNSS-denied environment.
+      content: "To create the essential building blocks for autonomy. As a first step, we are providing lightweight, cost-effective, and plug-and-play navigation solutions for GNSS-denied environments, powered by advanced Computer Vision and Sensor Fusion algorithms." //"To provide AI and Computer Vision systems that enable drones to navigate reliably in GPS-denied environments, enabling full autonomy for drone missions in the battlefield."
     },
-    {
-      icon: <Eye className="w-8 h-8" />,
-      title: "Our Vision",
-      content: "A world where autonomous systems can navigate anywhere, anytime, regardless of GPS availability. We envision our technology enabling life-saving missions, protecting critical infrastructure, and expanding the horizons of autonomous flight."
-    },
-    {
-      icon: <Lightbulb className="w-8 h-8" />,
-      title: "Our Innovation",
-      content: "Combining advanced computer vision, machine learning, and sensor fusion to create navigation systems that surpass human-level spatial awareness in challenging environments where traditional navigation fails."
-    },
-    {
-      icon: <Cog className="w-8 h-8" />,
-      title: "Our Technology",
-      content: "Real-time SLAM (Simultaneous Localization and Mapping) algorithms with edge AI processing, enabling autonomous navigation through visual-inertial odometry and environmental mapping without external positioning signals."
+    { // Zero will keep European sovereignty by providing advanced technology to every defence prime and army in Europe
+      icon: <Eye className="w-8 h-8" />, // A Europe where every defence asset - on the ground, in the air, and at sea - can operate with intelligent and complete autonomy to ensure sovereignty.
+      title: "Our Vision", // To ensure that every European warfighter can operate with confidence and precision in any environment, powered by accessible, intelligent navigation technology.
+      content: "A world where every European defence asset can operate autonomously and with precision in any environment. We envision a sovereign Europe, powered by accessible and intelligent technology."
     }
   ];
 
@@ -68,8 +58,7 @@ const Mission = () => {
             <CardContent className="p-12">
               <h3 className="text-3xl font-bold mb-6">Why It Matters</h3>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                Current GPS-based navigation systems fail in underground facilities, dense urban environments, 
-                and contested areas. Our technology ensures mission-critical operations can continue regardless 
+                Current GPS-based navigation systems fail in contested areas due to spoofing and jamming. Our technology ensures mission-critical operations can continue regardless 
                 of GPS availability, potentially saving lives and protecting infrastructure when it matters most.
               </p>
             </CardContent>
