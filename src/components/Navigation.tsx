@@ -56,12 +56,12 @@ const Navigation = () => {
             >
               Team
             </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Technology
-            </button>
+            // <button 
+            //  onClick={() => scrollToSection('about')}
+            //  className="text-sm font-medium hover:text-primary transition-colors"
+            // >
+            //  Technology
+            // </button>
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-sm font-medium hover:text-primary transition-colors"
