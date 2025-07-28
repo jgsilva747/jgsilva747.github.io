@@ -1,8 +1,8 @@
 const flightTests = [
   {
     title: "Open Field in Toulouse",
-    flightImage: "Flight1_map.pdf",
-    errorImage: "Flight1_error.pdf",
+    flightImage: "/Flight1_map.pdf",
+    errorImage: "/Flight1_error.pdf",
     stats: [
       "Flight Distance: 2.4 km",
       "Altitude Range: 200 m",
@@ -12,8 +12,8 @@ const flightTests = [
   },
   {
     title: "Small Village in Toulouse",
-    flightImage: "Flight2_map.pdf",
-    errorImage: "Flight2_error.pdf",
+    flightImage: "/Flight2_map.pdf",
+    errorImage: "/Flight2_error.pdf",
     stats: [
       "Flight Distance: 2.6 km",
       "Altitude Range: 200 m",
@@ -23,8 +23,8 @@ const flightTests = [
   },
   {
     title: "Coastline in Lisbon",
-    flightImage: "Flight3_map.pdf",
-    errorImage: "Flight3_error.pdf",
+    flightImage: "/Flight3_map.pdf",
+    errorImage: "/Flight3_error.pdf",
     stats: [
       "Flight Distance: 5 km",
       "Altitude Range: 200 m",
