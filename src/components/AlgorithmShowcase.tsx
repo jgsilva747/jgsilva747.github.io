@@ -29,7 +29,7 @@ const flightTests = [
       "Altitude Range: 200 m",
       "Max Speed: 54 km/h"
     ],
-    avgAccuracy: "Mean Accuracy: 36.79"
+    avgAccuracy: "Mean Accuracy: 36.79 m"
   }
 ];
 
@@ -45,12 +45,15 @@ const AlgorithmShowcase = () => {
 
             {/* Content */}
             <div className="flex flex-1 flex-col justify-between p-4 space-y-4">
-              {/* Stats */}
-              <ul className="list-disc pl-5 space-y-2 text-muted-foreground text-sm">
+
+              {/* Stats as Badges */}
+              <div className="flex flex-wrap justify-center gap-2">
                 {test.stats.map((stat, idx) => (
-                  <li key={idx}>{stat}</li>
+                  <Badge key={idx} variant="secondary" className="text-xs px-3 py-1 rounded-full">
+                    {stat}
+                  </Badge>
                 ))}
-              </ul>
+              </div>
 
               {/* Flight Image */}
               <div className="flex justify-center items-center w-full">
@@ -61,12 +64,16 @@ const AlgorithmShowcase = () => {
                 />
               </div>
 
-              {/* Average Accuracy */}
+              {/* Average Accuracy Highlight */}
               <div className="text-center mt-4">
-                <Badge variant="secondary" className="text-sm px-4 py-2">
+                <Badge 
+                  variant="secondary" 
+                  className="text-base font-semibold px-5 py-3 rounded-full shadow-md bg-primary/90 text-primary-foreground animate-pulse"
+                >
                   {test.avgAccuracy}
                 </Badge>
               </div>
+
             </div>
 
           </div>
@@ -77,4 +84,3 @@ const AlgorithmShowcase = () => {
 };
 
 export default AlgorithmShowcase;
-
