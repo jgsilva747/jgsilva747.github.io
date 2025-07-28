@@ -22,7 +22,7 @@ const flightTests = [
     avgAccuracy: "Mean Accuracy: 24.88 m"
   },
   {
-    title: "Coasline in Lisbon",
+    title: "Coastline in Lisbon",
     flightImage: "/Flight3_map.svg",
     stats: [
       "Flight Distance: 5 km",
