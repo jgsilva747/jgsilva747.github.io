@@ -84,16 +84,7 @@ const Navigation = () => {
             )}
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
-        </div>
-
-        {/* Mobile navigation */}
+          {/* Mobile navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-4 border-t border-border">
             <button 
@@ -120,23 +111,33 @@ const Navigation = () => {
             >
               Team
             </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="block w-full text-left py-2 text-sm font-medium hover:text-primary transition-colors"
-            >
-              Technology
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="block w-full text-left py-2 text-sm font-medium hover:text-primary transition-colors"
-            >
-              Contact
-            </button>
-            <Button size="sm" className="w-full mt-4"
-              onClick={() => scrollToSection('contact')}
-            >
-              Get in Touch
-            </Button>
+            
+            {/* Conditional "Technology" button */}
+            {SHOW_TECHNOLOGY_BUTTON && (
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="block w-full text-left py-2 text-sm font-medium hover:text-primary transition-colors"
+              >
+                Technology
+              </button>
+            )}
+
+            {/* Conditional "Contact" and "Get in Touch" buttons */}
+            {SHOW_CONTACT_BUTTON && (
+              <>
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="block w-full text-left py-2 text-sm font-medium hover:text-primary transition-colors"
+                >
+                  Contact
+                </button>
+                <Button size="sm" className="w-full mt-4"
+                  onClick={() => scrollToSection('contact')}
+                >
+                  Get in Touch
+                </Button>
+              </>
+            )}
           </div>
         )}
       </div>
