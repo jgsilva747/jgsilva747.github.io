@@ -2,22 +2,18 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Textarea } from "@/components/ui/textarea"; // Ensure Textarea is imported
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 
 const Contact = () => {
-  // Use a more descriptive state: 'idle', 'submitting', 'success'
   const [formState, setFormState] = useState('idle');
 
   const handleFormSubmit = () => {
-    // When submit is clicked, we start the "submitting" process
     setFormState('submitting');
   };
 
   const handleFormCompletion = () => {
-    // This is called by the iframe's onLoad
-    // We only transition to 'success' if we were in the 'submitting' state
     if (formState === 'submitting') {
       setFormState('success');
     }
@@ -46,12 +42,11 @@ const Contact = () => {
                 Send us a message
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-6 relative min-h-[450px]">
+            <CardContent className="p-6 relative min-h-[500px]">
               
               {/* === THANK YOU MESSAGE (Fades in) === */}
               <div 
                 id="thank-you-message" 
-                // Conditionally apply classes for fade-in effect
                 className={`absolute inset-0 flex flex-col items-center justify-center text-center p-8 transition-opacity duration-1000 ease-in-out
                             ${formState === 'success' ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
               >
@@ -63,18 +58,16 @@ const Contact = () => {
               {/* === THE FORM (Fades out) === */}
               <div 
                 id="contact-form-container"
-                // Conditionally apply classes for fade-out effect
                 className={`transition-opacity duration-1000 ease-in-out
                             ${formState !== 'idle' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
               >
                 <form
                   name="gform"
-                  action="https://docs.google.com/forms/d/e/1FAIpQLSebo5KcGcsdCyPSQ1d5goYca50UtCbXO_YWazYKv7Kjja33NA/viewform?usp=pp_url&"
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSebo5KcGcsdCyPSQ1d5goYca50UtCbXO_YWazYKv7Kjja33NA/formResponse?" // Corrected URL
                   target="hidden_iframe"
                   onSubmit={handleFormSubmit}
                   className="space-y-6"
                 >
-                  {/* ... Your form inputs (name, email, etc.) go here ... */}
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label className="text-sm font-medium">Name</label>
@@ -85,21 +78,27 @@ const Contact = () => {
                       <Input name="entry.1351047289" type="email" placeholder="your@email.com" required />
                     </div>
                   </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium">Company</label>
-                      <Input name="entry.1787723461" placeholder="Your company or organisation" required />
-                    </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium">Company</label>
+                    <Input name="entry.1787723461" placeholder="Your company or organisation" />
                   </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium">Subject</label>
-                      <Input name="entry.2115839708" placeholder="What would you like to discuss?" required />
-                    </div>
+                  {/* The extra </div> was here */}
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium">Subject</label>
+                    <Input name="entry.2115839708" placeholder="What would you like to discuss?" required />
                   </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium">Message</label>
-                      <Input name="entry.955784430" placeholder="Tell us about your interest..." required />
-                    </div>
+                  {/* The extra </div> was here */}
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium">Message</label>
+                    {/* FIXED: Changed from Input to Textarea for multi-line text */}
+                    <Textarea 
+                      name="entry.955784430" 
+                      placeholder="Tell us about your interest..." 
+                      className="min-h-[120px] resize-none"
+                      required 
+                    />
                   </div>
+                  {/* The extra </div> was here */}
                   <Button type="submit" variant="hero" className="w-full group" disabled={formState !== 'idle'}>
                     {formState === 'submitting' ? (
                       <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Submitting...</>
