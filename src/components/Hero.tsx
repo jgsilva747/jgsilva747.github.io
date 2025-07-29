@@ -19,9 +19,9 @@ const Hero = () => {
           </p>       
           {/* Subheading */}
           <p className="mt-8 text-l md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
-            Developing breakthrough navigation technology for drones operating in GPS-denied environments, using computer vision.
+            Developing a navigation solution for drones in GPS-denied environments,
             <br className="hidden md:block" /> 
-            Our goal is to provide affordable, lightweight, plug-and-play modules, compatible with open-source flight computers.
+            providing affordable, lightweight, plug-and-play modules equipped with AI.
           </p>
           
           {/* Feature highlights */}
