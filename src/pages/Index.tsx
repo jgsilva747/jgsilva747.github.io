@@ -7,7 +7,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 
 const SHOW_TECHNOLOGY = false;
-const SHOW_CONTACT = false;
+const SHOW_CONTACT = true;
 
 const Index = () => {
   return (
