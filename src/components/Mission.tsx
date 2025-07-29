@@ -60,9 +60,7 @@ const Mission = () => {
               <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
                 Current GPS-based navigation systems fail in contested areas due to spoofing and jamming.
                 <br className="hidden md:block" />
-                <br className="hidden md:block" />
                 Our technology ensures mission-critical operations can continue regardless of GPS availability.
-                <br className="hidden md:block" />
                 <br className="hidden md:block" />
                 This re-enables drone autonomy, saving lives and protecting infrastructure when it matters most.
               </p>
