@@ -119,23 +119,11 @@ const Navigation = () => {
                 Technology
               </button>
             )}
-
-            {/* Conditional "Contact" and "Get in Touch" buttons */}
-            {SHOW_CONTACT_BUTTON && (
-              <>
-                <button 
-                  onClick={() => scrollToSection('contact')}
-                  className="block w-full text-left py-2 text-sm font-medium hover:text-primary transition-colors"
-                >
-                  Contact
-                </button>
-                <Button size="sm" className="w-full mt-4"
-                  onClick={() => scrollToSection('contact')}
-                >
-                  Get in Touch
-                </Button>
-              </>
-            )}
+            <Button size="sm" className="w-full mt-4"
+              onClick={() => scrollToSection('contact')}
+            >
+              Get in Touch
+            </Button>
           </div>
         )}
       </div>
