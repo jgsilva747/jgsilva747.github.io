@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea"; // Ensure Textarea is imported
+import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 
@@ -63,7 +63,7 @@ const Contact = () => {
               >
                 <form
                   name="gform"
-                  action="https://docs.google.com/forms/d/e/1FAIpQLSebo5KcGcsdCyPSQ1d5goYca50UtCbXO_YWazYKv7Kjja33NA/formResponse?" // Corrected URL
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSebo5KcGcsdCyPSQ1d5goYca50UtCbXO_YWazYKv7Kjja33NA/formResponse?"
                   target="hidden_iframe"
                   onSubmit={handleFormSubmit}
                   className="space-y-6"
@@ -82,12 +82,10 @@ const Contact = () => {
                     <label className="text-sm font-medium">Company</label>
                     <Input name="entry.1787723461" placeholder="Your company or organisation" />
                   </div>
-                  {/* The extra </div> was here */}
                   <div className="space-y-2">
                     <label className="text-sm font-medium">Subject</label>
                     <Input name="entry.2115839708" placeholder="What would you like to discuss?" required />
                   </div>
-                  {/* The extra </div> was here */}
                   <div className="space-y-2">
                     <label className="text-sm font-medium">Message</label>
                     {/* FIXED: Changed from Input to Textarea for multi-line text */}
@@ -98,7 +96,6 @@ const Contact = () => {
                       required 
                     />
                   </div>
-                  {/* The extra </div> was here */}
                   <Button type="submit" variant="hero" className="w-full group" disabled={formState !== 'idle'}>
                     {formState === 'submitting' ? (
                       <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Submitting...</>
