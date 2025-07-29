@@ -82,30 +82,30 @@ const Navigation = () => {
           </button>
         </div>
 
-        {/* Mobile navigation - UPDATED SECTION */}
+        {/* Mobile navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-4 border-t border-border">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="block w-full text-left py-2 text-sm font-medium hover:text-primary transition-colors"
+              className="block w-full py-2 text-sm font-medium hover:text-primary transition-colors"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('showcase')}
-              className="block w-full text-left py-2 text-sm font-medium hover:text-primary transition-colors"
+              className="block w-full py-2 text-sm font-medium hover:text-primary transition-colors"
             >
               Our Tests
             </button>
             <button 
               onClick={() => scrollToSection('mission')}
-              className="block w-full text-left py-2 text-sm font-medium hover:text-primary transition-colors"
+              className="block w-full py-2 text-sm font-medium hover:text-primary transition-colors"
             >
               Mission
             </button>
             <button 
               onClick={() => scrollToSection('team')}
-              className="block w-full text-left py-2 text-sm font-medium hover:text-primary transition-colors"
+              className="block w-full py-2 text-sm font-medium hover:text-primary transition-colors"
             >
               Team
             </button>
@@ -114,7 +114,7 @@ const Navigation = () => {
             {SHOW_TECHNOLOGY_BUTTON && (
               <button 
                 onClick={() => scrollToSection('about')}
-                className="block w-full text-left py-2 text-sm font-medium hover:text-primary transition-colors"
+                className="block w-full py-2 text-sm font-medium hover:text-primary transition-colors"
               >
                 Technology
               </button>
