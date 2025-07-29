@@ -11,24 +11,21 @@ const Team = () => {
     {
       name: "Frederico Baptista",
       role: "CEO & Co-Founder", 
-      education: "MSc Aerospace Systems Engineering",
-      background: "Ex-Airbus",
+      education: "Aerospace Systems Engineer",
       image: "/_fred.png",
       linkedin: "https://www.linkedin.com/in/frederico-baptista-aerospace/"
     },
     {
       name: "Álvaro Patrício",
       role: "COO & Co-Founder",
-      education: "MSc Aerospace Engineering",
-      background: "Ex-ESA",
+      education: "Aerospace Engineer",
       image: "/_alvaro.png",
       linkedin: "https://www.linkedin.com/in/%C3%A1lvaropatricio/"
     },
     {
       name: "João Silva",
       role: "CTO & Co-Founder",
-      education: "MSc Aerospace Engineering",
-      background: "Ex-DLR",
+      education: "Aerospace Engineer",
       image: "/_joao.png",
       linkedin: "https://www.linkedin.com/in/joaogdbs/"
     }
@@ -82,7 +79,7 @@ const Team = () => {
             {founders.map((founder, index) => (
               // Wrap the Card component with an <a> tag
               <a 
-                key={index} // The key now goes on the outermost element
+                key={index}
                 href={founder.linkedin} 
                 target="_blank" // Opens the link in a new tab
                 rel="noopener noreferrer" // Important for security
@@ -98,7 +95,6 @@ const Team = () => {
                       <GraduationCap className="w-4 h-4 text-muted-foreground" />
                       <p className="text-sm text-muted-foreground">{founder.education}</p>
                     </div>
-                    <p className="text-sm text-muted-foreground">{founder.background}</p>
                   </CardContent>
                 </Card>
               </a>
