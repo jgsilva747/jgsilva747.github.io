@@ -19,9 +19,9 @@ const Hero = () => {
           </p>       
           {/* Subheading */}
           <p className="mt-8 text-l md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
-            Developing a navigation solution for drones in GPS-denied environments,
+            Solving navigation for drones in GPS-denied environments,
             <br className="hidden md:block" /> 
-            providing affordable, lightweight, plug-and-play modules equipped with AI.
+            developing an affordable, light, plug-and-play module with AI.
           </p>
           
           {/* Feature highlights */}
