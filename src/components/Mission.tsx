@@ -29,6 +29,7 @@ const Mission = () => {
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Zero Industries is pioneering the future of autonomous navigation, 
+            <br className="hidden md:block" />
             developing technology that works where others fail.
           </p>
         </div>
