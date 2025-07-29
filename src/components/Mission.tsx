@@ -59,7 +59,7 @@ const Mission = () => {
               <h3 className="text-3xl font-bold mb-6">Why It Matters</h3>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
                 Current GPS-based navigation systems fail in contested areas due to spoofing and jamming. Our technology ensures mission-critical operations can continue regardless 
-                of GPS availability, potentially saving lives and protecting infrastructure when it matters most.
+                of GPS availability. This re-enables drone autonomy, potentially saving lives and protecting infrastructure when it matters most.
               </p>
             </CardContent>
           </Card>
