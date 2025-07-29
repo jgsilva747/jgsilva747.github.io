@@ -12,15 +12,15 @@ const Team = () => {
       name: "Frederico Baptista",
       role: "CEO & Co-Founder", 
       education: "MSc Aerospace Systems Engineering",
-      background: "Project Management at Airbus",
+      background: "Ex-Airbus",
       image: "/_fred.png",
       linkedin: "https://www.linkedin.com/in/frederico-baptista-aerospace/"
     },
     {
       name: "Álvaro Patrício",
-      role: "CTO & Co-Founder",
+      role: "COO & Co-Founder",
       education: "MSc Aerospace Engineering",
-      background: "Computer Vision at ESA",
+      background: "Ex-ESA",
       image: "/_alvaro.png",
       linkedin: "https://www.linkedin.com/in/%C3%A1lvaropatricio/"
     },
@@ -28,7 +28,7 @@ const Team = () => {
       name: "João Silva",
       role: "CTO & Co-Founder",
       education: "MSc Cum Laude Aerospace Engineering",
-      background: "Spacecraft Navigation at DLR",
+      background: "Ex-DLR",
       image: "/_joao.png",
       linkedin: "https://www.linkedin.com/in/joaogdbs/"
     }
@@ -63,7 +63,7 @@ const Team = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <Badge variant="secondary" className="mb-4">Our Team</Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-primary">Expert Leadership</span>
+            <span className="text-primary">Specialist Founding Team</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
             {description.split('\n').map((line, index) => (
@@ -77,7 +77,7 @@ const Team = () => {
 
         {/* Founding Team */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8 text-center">Founding Team</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">Meet the Founders</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {founders.map((founder, index) => (
               // Wrap the Card component with an <a> tag
