@@ -27,7 +27,7 @@ const Team = () => {
     {
       name: "João Silva",
       role: "CTO & Co-Founder",
-      education: "MSc Cum Laude Aerospace Engineering",
+      education: "MSc Aerospace Engineering",
       background: "Ex-DLR",
       image: "/_joao.png",
       linkedin: "https://www.linkedin.com/in/joaogdbs/"
