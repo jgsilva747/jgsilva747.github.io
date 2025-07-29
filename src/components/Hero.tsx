@@ -19,8 +19,9 @@ const Hero = () => {
           </p>       
           {/* Subheading */}
           <p className="mt-8 text-l md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
-            Developing breakthrough navigation technology for drones operating in GPS-denied environments. 
-            Our autonomous systems enable reliable navigation where traditional methods fail.
+            Developing breakthrough navigation technology for drones operating in GPS-denied environments, using computer vision.
+            <br className="hidden md:block" /> 
+            Our goal is to provide affordable, lightweight, plug-and-play modules, compatible with open-source flight computers.
           </p>
           
           {/* Feature highlights */}
@@ -31,7 +32,9 @@ const Hero = () => {
               </div>
               <h3 className="font-semibold">Autonomous Navigation</h3>
               <p className="text-sm text-muted-foreground text-center">
-                AI-powered navigation systems for GPS-denied environments
+                AI-powered navigation systems
+                <br className="hidden md:block" />
+                for GPS-denied environments
               </p>
             </div>
             
@@ -41,7 +44,9 @@ const Hero = () => {
               </div>
               <h3 className="font-semibold">Mission Critical</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Reliable performance in challenging operational conditions
+                Reliable performance in
+                <br className="hidden md:block" />
+                challenging operational conditions
               </p>
             </div>
             
@@ -51,7 +56,9 @@ const Hero = () => {
               </div>
               <h3 className="font-semibold">Real-Time Processing</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Instant decision-making for dynamic flight environments
+                Cutting-edge computer vision algorithms
+                <br className="hidden md:block" />
+                for fast performance on edge devices
               </p>
             </div>
           </div>
