@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
+/*
 // --- Google Analytics Import ---
 import ReactGA from 'react-ga4';
 
@@ -30,9 +31,11 @@ const RouteChangeTracker = () => {
 
   return null; // This component does not render anything
 };
-
+*/
 
 const queryClient = new QueryClient();
+
+// <RouteChangeTracker /> // Put this after comment /*3*/
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -41,7 +44,6 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         {/* 3. PLACE THE TRACKER COMPONENT INSIDE THE ROUTER */}
-        <RouteChangeTracker />
 
         <Routes>
           <Route path="/" element={<Index />} />
