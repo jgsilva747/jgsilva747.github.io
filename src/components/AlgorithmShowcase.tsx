@@ -112,9 +112,10 @@ const AlgorithmShowcase = () => {
 
       {/* GFL Explanation with Image */}
       <div className="max-w-5xl mx-auto text-center bg-card border border-border rounded-2xl shadow-xl px-8 py-14">
-        <Badge variant="secondary" className="mb-6 text-sm px-4 py-1.5">
+        {/* Apenas texto, sem fundo */}
+        <span className="mb-6 block text-sm md:text-base font-semibold text-primary uppercase tracking-wider">
           Proprietary Technology
-        </Badge>
+        </span>
 
         {/* Title before image */}
         <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary leading-snug">
