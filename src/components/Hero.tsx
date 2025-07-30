@@ -17,24 +17,27 @@ const Hero = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* Optional Overlay */}
+      {/* Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10"></div>
 
       {/* Content */}
       <div className="container relative z-20 mx-auto px-4">
-        <div className="flex flex-col items-center min-h-screen text-center pt-20">
+        <div className="flex flex-col items-center min-h-screen text-center pt-20 text-white">
+          {/* Logo */}
           <img
             src={ZeroLogo}
             alt="Zero Industries Logo"
             className="w-2/3 md:w-1/3"
           />
-          {/* Your Slogan */}
-          <p className="text-2xl italic text-muted-foreground -mt-4 md:-mt-[60px]">
+
+          {/* Slogan */}
+          <p className="text-2xl italic -mt-4 md:-mt-[60px]">
             Smarter systems.
             <br className="md:hidden" /> Stronger defence.
           </p>
+
           {/* Subheading */}
-          <p className="mt-8 text-l md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-8">
+          <p className="mt-8 text-l md:text-2xl max-w-3xl mx-auto leading-relaxed pt-8">
             Solving navigation for drones in GPS-denied environments,
             <br className="hidden md:block" />
             developing an affordable, light, plug-and-play module with AI.
@@ -42,36 +45,40 @@ const Hero = () => {
 
           {/* Feature highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 max-w-4xl mx-auto">
+            
+            {/* Autonomous Navigation */}
             <div className="flex flex-col items-center space-y-3">
               <div className="p-3 rounded bg-accent">
                 <Navigation className="w-6 h-6 text-accent-foreground" />
               </div>
               <h3 className="font-semibold">Autonomous Navigation</h3>
-              <p className="text-sm text-muted-foreground text-center">
+              <p className="text-sm text-center">
                 AI-powered navigation systems
                 <br className="hidden md:block" />
                 for GPS-denied environments
               </p>
             </div>
 
+            {/* Geospatial Intelligence Engine */}
             <div className="flex flex-col items-center space-y-3">
               <div className="p-3 rounded bg-accent">
                 <Shield className="w-6 h-6 text-accent-foreground" />
               </div>
-              <h3 className="font-semibold">Mission Critical</h3>
-              <p className="text-sm text-muted-foreground text-center">
-                Reliable performance in
+              <h3 className="font-semibold">Geospatial Intelligence Engine</h3>
+              <p className="text-sm text-center">
+                Our proprietary model for real-time
                 <br className="hidden md:block" />
-                challenging operational conditions
+                drone geolocation worldwide
               </p>
             </div>
 
+            {/* Real-Time Processing */}
             <div className="flex flex-col items-center space-y-3">
               <div className="p-3 rounded bg-accent">
                 <Zap className="w-6 h-6 text-accent-foreground" />
               </div>
               <h3 className="font-semibold">Real-Time Processing</h3>
-              <p className="text-sm text-muted-foreground text-center">
+              <p className="text-sm text-center">
                 Cutting-edge computer vision algorithms
                 <br className="hidden md:block" />
                 for fast performance on edge devices
