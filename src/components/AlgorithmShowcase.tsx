@@ -116,6 +116,11 @@ const AlgorithmShowcase = () => {
           Proprietary Technology
         </Badge>
 
+        {/* Title before image */}
+        <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary leading-snug">
+          Geospatial Fingerprint Localization (GFL)
+        </h3>
+
         {/* Showcase Image */}
         <div className="mb-8">
           <img
@@ -125,9 +130,6 @@ const AlgorithmShowcase = () => {
           />
         </div>
 
-        <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary leading-snug">
-          Geospatial Fingerprint Localization (GFL)
-        </h3>
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
           Beyond traditional feature-matching approaches, we developed an entirely new proprietary
           model, called <span className="text-primary font-semibold">Geospatial Fingerprint Localization (GFL)</span>.
