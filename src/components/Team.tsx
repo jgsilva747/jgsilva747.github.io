@@ -18,7 +18,7 @@ const Team = () => {
     {
       name: "Álvaro Patrício",
       role: "COO & Co-Founder",
-      education: "Aerospace Engineer",
+      education: "Researcher in Computer Vision",
       image: "/_alvaro.png",
       linkedin: "https://www.linkedin.com/in/%C3%A1lvaropatricio/"
     },
