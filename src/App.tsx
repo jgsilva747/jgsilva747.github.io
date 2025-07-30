@@ -9,13 +9,13 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
-/*
+///*
 // --- Google Analytics Import ---
 import ReactGA from 'react-ga4';
 
 // 1. INITIALIZE GOOGLE ANALYTICS
 // It's best to do this once, outside of any component.
-const GA_MEASUREMENT_ID = "G-NY7PMVZY7D"; // Your actual ID
+const GA_MEASUREMENT_ID = "G-NY7PMVZY7D";
 ReactGA.initialize(GA_MEASUREMENT_ID);
 
 
@@ -31,7 +31,7 @@ const RouteChangeTracker = () => {
 
   return null; // This component does not render anything
 };
-*/
+//*/
 
 const queryClient = new QueryClient();
 
@@ -44,6 +44,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         {/* 3. PLACE THE TRACKER COMPONENT INSIDE THE ROUTER */}
+        <RouteChangeTracker />
 
         <Routes>
           <Route path="/" element={<Index />} />
