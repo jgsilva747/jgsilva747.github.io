@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 
 const description =
-  "Sub-50 m accuracy accross three initial tests,\nwith 2 months of development and a 500€ budget.";
+  "Sub-50 m accuracy across three initial tests,\nwith 2 months of development and a 500€ budget.";
 
 const flightTests = [
   {
@@ -93,7 +93,7 @@ const AlgorithmShowcase = () => {
         ))}
       </div>
 
-      {/* GIF Showcase */}
+      {/* Visual Demonstration */}
       <div className="max-w-5xl mx-auto text-center mb-24">
         <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">
           Real-time Visual Positioning Demonstration
@@ -106,44 +106,7 @@ const AlgorithmShowcase = () => {
           />
         </div>
         <p className="mt-4 text-base md:text-lg text-muted-foreground">
-          Matching drone imagery with satellite data in real time using our proprietary algorithms.
-        </p>
-      </div>
-
-      {/* GFL Explanation with Image */}
-      <div className="max-w-5xl mx-auto text-center bg-card border border-border rounded-2xl shadow-xl px-8 py-14">
-        {/* Apenas texto, sem fundo */}
-        <span className="mb-6 block text-sm md:text-base font-semibold text-primary uppercase tracking-wider">
-          Proprietary Technology
-        </span>
-
-        {/* Title before image */}
-        <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary leading-snug">
-          Geospatial Fingerprint Localisation (GFL)
-        </h3>
-
-        {/* Showcase Image */}
-        <div className="mb-8">
-          <img
-            src="/gfl_showcase.jpg"
-            alt="GFL Technology Showcase"
-            className="w-full rounded-lg object-cover shadow-md"
-          />
-        </div>
-
-        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-          Beyond traditional feature-matching approaches, we developed an entirely new proprietary
-          model, called <span className="text-primary font-semibold">Geospatial Fingerprint Localisation (GFL)</span>.
-          <br /><br />
-          GFL is a state-of-the-art geolocation framework trained internally on one of the largest
-          multimodal datasets of drone and satellite imagery ever assembled. It goes far beyond
-          simple keypoint correspondence by combining multiple layers of inference to achieve
-          sub-meter localisation accuracy even in GPS-denied environments.
-          <br /><br />
-          This technology, developed in-house from the ground up, enables real-time global
-          positioning where traditional systems fail. GFL is the foundation of our platform and is
-          unique in its ability to scale globally while maintaining robustness in highly dynamic
-          conditions.
+          Real-time matching of aerial imagery with geospatial data for reliable navigation.
         </p>
       </div>
     </section>
@@ -151,3 +114,4 @@ const AlgorithmShowcase = () => {
 };
 
 export default AlgorithmShowcase;
+
