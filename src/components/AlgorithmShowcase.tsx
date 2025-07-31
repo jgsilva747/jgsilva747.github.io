@@ -119,7 +119,7 @@ const AlgorithmShowcase = () => {
 
         {/* Title before image */}
         <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary leading-snug">
-          Geospatial Fingerprint Localization (GFL)
+          Geospatial Fingerprint Localisation (GFL)
         </h3>
 
         {/* Showcase Image */}
@@ -133,12 +133,12 @@ const AlgorithmShowcase = () => {
 
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
           Beyond traditional feature-matching approaches, we developed an entirely new proprietary
-          model, called <span className="text-primary font-semibold">Geospatial Fingerprint Localization (GFL)</span>.
+          model, called <span className="text-primary font-semibold">Geospatial Fingerprint Localisation (GFL)</span>.
           <br /><br />
           GFL is a state-of-the-art geolocation framework trained internally on one of the largest
           multimodal datasets of drone and satellite imagery ever assembled. It goes far beyond
           simple keypoint correspondence by combining multiple layers of inference to achieve
-          sub-meter localization accuracy even in GPS-denied environments.
+          sub-meter localisation accuracy even in GPS-denied environments.
           <br /><br />
           This technology, developed in-house from the ground up, enables real-time global
           positioning where traditional systems fail. GFL is the foundation of our platform and is
