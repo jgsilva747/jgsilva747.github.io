@@ -7,19 +7,19 @@ const flightTests = [
   {
     title: "Open Field in Toulouse",
     flightImage: "/Flight1_map.svg",
-    stats: ["Flight Distance: 2.4 km", "Altitude Range: ? m", "Max Speed: 54 km/h"],
+    stats: ["Flight Distance: 2.4 km",  "Max Speed: 54 km/h"],
     avgAccuracy: "Mean Accuracy: 43.71 m",
   },
   {
     title: "Small Village in Toulouse",
     flightImage: "/Flight2_map.svg",
-    stats: ["Flight Distance: 2.6 km", "Altitude Range: ? m", "Max Speed: 54 km/h"],
+    stats: ["Flight Distance: 2.6 km",  "Max Speed: 54 km/h"],
     avgAccuracy: "Mean Accuracy: 24.88 m",
   },
   {
     title: "Coastline in Lisbon",
     flightImage: "/Flight3_map.svg",
-    stats: ["Flight Distance: 5 km", "Altitude Range: ? m", "Max Speed: 54 km/h"],
+    stats: ["Flight Distance: 5 km", "Max Speed: 54 km/h"],
     avgAccuracy: "Mean Accuracy: 36.79 m",
   },
 ];
