@@ -6,9 +6,9 @@ const description =
 const flightTests = [
   {
     title: "Open Field in Toulouse",
-    flightImage: "/Flight1_map.svg",
+    flightImage: "/Flight1_map.png",
     stats: ["Flight Distance: 2.4 km",  "Max Speed: 54 km/h"],
-    avgAccuracy: "Mean Accuracy: 43.71 m",
+    avgAccuracy: "Mean Accuracy: 26.30 m",
   },
   {
     title: "Small Village in Toulouse",
