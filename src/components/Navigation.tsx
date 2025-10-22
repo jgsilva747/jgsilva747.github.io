@@ -58,6 +58,14 @@ const Navigation = () => {
             >
               Team
             </button>
+            <a
+              href="/jobs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Careers
+            </a>
             {SHOW_TECHNOLOGY_BUTTON && (
               <button 
                 onClick={() => scrollToSection('about')}
@@ -109,7 +117,15 @@ const Navigation = () => {
             >
               Team
             </button>
-            
+            <a
+              href="/jobs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full py-2 text-sm font-medium hover:text-primary transition-colors text-center"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Careers
+            </a>
             {/* Conditional "Technology" button */}
             {SHOW_TECHNOLOGY_BUTTON && (
               <button 
