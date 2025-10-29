@@ -18,9 +18,9 @@ const flightTests = [
   },
   {
     title: "Coastline in Lisbon",
-    flightImage: "/Flight3_map.svg",
+    flightImage: "/Flight3_map.png",
     stats: ["Flight Distance: 5 km", "Max Speed: 54 km/h"],
-    avgAccuracy: "Mean Accuracy: 36.79 m",
+    avgAccuracy: "Mean Accuracy: 7.50 m",
   },
 ];
 
