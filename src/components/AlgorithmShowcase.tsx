@@ -1,26 +1,26 @@
 import { Badge } from "@/components/ui/badge";
 
 const description =
-  "Sub-50 m accuracy across three initial tests,\nwith 2 months of development and a 500€ budget.";
+  "Sub-20 m accuracy across three initial tests.";
 
 const flightTests = [
   {
     title: "Open Field in Toulouse",
     flightImage: "/Flight1_map.png",
     stats: ["Flight Distance: 2.4 km",  "Max Speed: 54 km/h"],
-    avgAccuracy: "Mean Accuracy: 28.90 m",
+    avgAccuracy: "Mean Accuracy: 19.8 m",
   },
   {
     title: "Small Village in Toulouse",
-    flightImage: "/Flight2_map.svg",
+    flightImage: "/Flight2_map.png",
     stats: ["Flight Distance: 2.6 km",  "Max Speed: 54 km/h"],
-    avgAccuracy: "Mean Accuracy: 24.88 m",
+    avgAccuracy: "Mean Accuracy: 18.7 m",
   },
   {
     title: "Coastline in Lisbon",
     flightImage: "/Flight3_map.png",
     stats: ["Flight Distance: 5 km", "Max Speed: 54 km/h"],
-    avgAccuracy: "Mean Accuracy: 7.50 m",
+    avgAccuracy: "Mean Accuracy: 16.0 m",
   },
 ];
 
