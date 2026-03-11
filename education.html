@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education — Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span>Y</span>N</a>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="education.html" class="active">Education</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="creative.html">Creative</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container fade-in">
+      <div class="section-label">Education</div>
+      <h1 class="section-title">Academic background</h1>
+      <p class="section-intro">
+        Degrees, certifications, and academic milestones.
+      </p>
+    </div>
+  </div>
+
+  <!-- Education List -->
+  <section>
+    <div class="container">
+      <div class="edu-list">
+
+        <div class="edu-item fade-in">
+          <div class="year">2019 — 2023</div>
+          <div>
+            <h3>MEng Aerospace Engineering</h3>
+            <div class="school">University Name</div>
+            <p>
+              Thesis topic, honours, relevant coursework, or notable achievements.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-item fade-in">
+          <div class="year">2015 — 2019</div>
+          <div>
+            <h3>BSc Aerospace Engineering</h3>
+            <div class="school">University Name</div>
+            <p>
+              Key modules, projects, or distinctions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Add more education items as needed -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Email</a>
+      </div>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

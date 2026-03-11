@@ -2,66 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coming Soon</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f9f9f7;
-      font-family: 'Georgia', serif;
-      color: #1a1a1a;
-    }
-
-    .container {
-      text-align: center;
-      padding: 2rem;
-    }
-
-    .label {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #999;
-      margin-bottom: 1.5rem;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 8vw, 5rem);
-      font-weight: 400;
-      letter-spacing: -0.02em;
-      line-height: 1.1;
-      margin-bottom: 1.5rem;
-    }
-
-    .divider {
-      width: 40px;
-      height: 1px;
-      background: #ccc;
-      margin: 0 auto 1.5rem;
-    }
-
-    p {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 1rem;
-      color: #666;
-      line-height: 1.6;
-      max-width: 320px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Aerospace Engineer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="label">Portfolio</div>
-    <h1>Coming Soon</h1>
-    <div class="divider"></div>
-    <p>Something is in the works. Check back soon.</p>
-  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span>Y</span>N</a>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="creative.html">Creative</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / About -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <div class="label">Aerospace Engineer &amp; Founder</div>
+        <h1>Your Name</h1>
+        <p>
+          A brief intro about yourself — your background, what drives you,
+          and what you're building. Two to three sentences that capture who you are.
+        </p>
+        <a href="#experience" class="cta">See my work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <div class="fade-in">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Where I've worked</h2>
+        <p class="section-intro">
+          From founding a defence company to engineering aerospace systems.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2023 — Present</div>
+          <div class="timeline-body">
+            <h3>Founder &amp; CEO</h3>
+            <div class="org">Your Company Name</div>
+            <p>
+              Brief description of the company, its mission, and your role.
+              What problems are you solving? What have you built?
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2021 — 2023</div>
+          <div class="timeline-body">
+            <h3>Previous Role Title</h3>
+            <div class="org">Previous Organisation</div>
+            <p>
+              What you did here, key achievements, technologies used.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-date">2019 — 2021</div>
+          <div class="timeline-body">
+            <h3>Another Role</h3>
+            <div class="org">Another Organisation</div>
+            <p>
+              Description of responsibilities and accomplishments.
+            </p>
+          </div>
+        </div>
+
+        <!-- Add more timeline items as needed -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="fade-in">
+        <div class="section-label">Projects</div>
+        <h2 class="section-title">Things I've built</h2>
+        <p class="section-intro">
+          Selected projects spanning aerospace, defence, and engineering.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <a href="projects/project-one.html" class="project-card fade-in">
+          <h3>Project One</h3>
+          <p>
+            Short description of the project — what it is, why it matters,
+            what your role was.
+          </p>
+          <div class="tags">
+            <span class="tag">Aerospace</span>
+            <span class="tag">Systems Engineering</span>
+          </div>
+        </a>
+
+        <a href="projects/project-two.html" class="project-card fade-in">
+          <h3>Project Two</h3>
+          <p>
+            Another project description. Keep it concise — 2-3 sentences.
+          </p>
+          <div class="tags">
+            <span class="tag">Defence</span>
+            <span class="tag">Autonomy</span>
+          </div>
+        </a>
+
+        <a href="projects/project-three.html" class="project-card fade-in">
+          <h3>Project Three</h3>
+          <p>
+            Description of a third project you're proud of.
+          </p>
+          <div class="tags">
+            <span class="tag">Propulsion</span>
+            <span class="tag">R&amp;D</span>
+          </div>
+        </a>
+
+        <!-- Add more project cards as needed -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Email</a>
+      </div>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
+    // Scroll fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>

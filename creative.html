@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative — Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span>Y</span>N</a>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="creative.html" class="active">Creative</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container fade-in">
+      <div class="section-label">Creative</div>
+      <h1 class="section-title">Beyond engineering</h1>
+      <p class="section-intro">
+        Poetry, language, and music — the other side of things.
+      </p>
+    </div>
+  </div>
+
+  <!-- Poetry -->
+  <section>
+    <div class="container">
+      <div class="creative-section">
+        <div class="fade-in">
+          <div class="section-label">Poetry</div>
+          <h2 class="section-title">Poems</h2>
+          <p class="section-intro">Words arranged with intention.</p>
+        </div>
+
+        <div class="poem fade-in">
+          <h3>Poem Title One</h3>
+          <pre>
+First line of the poem goes here,
+second line continues the thought.
+
+A stanza break, then something new —
+the way light catches on the wing
+of something built to leave the ground.</pre>
+        </div>
+
+        <div class="poem fade-in">
+          <h3>Poem Title Two</h3>
+          <pre>
+Replace this with your own poem.
+Each poem sits in its own card
+with a subtle gold accent on the left.</pre>
+        </div>
+
+        <!-- Add more poems as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Language -->
+  <section>
+    <div class="container">
+      <div class="creative-section">
+        <div class="fade-in">
+          <div class="section-label">Language</div>
+          <h2 class="section-title">On language</h2>
+          <p class="section-intro">
+            Thoughts on words, translation, etymology, or whatever
+            aspect of language interests you.
+          </p>
+        </div>
+
+        <div class="fade-in">
+          <div class="project-card" style="margin-bottom: 1.5rem;">
+            <h3>Essay or Thought Title</h3>
+            <p>
+              Write about a linguistic topic that fascinates you.
+              This could be an essay, a collection of notes, or observations
+              about how language shapes thought.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Another Language Piece</h3>
+            <p>
+              Add as many of these as you like. Each one uses the
+              same card style as the project cards for visual consistency.
+            </p>
+          </div>
+        </div>
+
+        <!-- Add more language pieces as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Music -->
+  <section>
+    <div class="container">
+      <div class="creative-section">
+        <div class="fade-in">
+          <div class="section-label">Music</div>
+          <h2 class="section-title">Compositions</h2>
+          <p class="section-intro">
+            Original music. Replace the placeholders with embedded audio players,
+            SoundCloud embeds, or links to your recordings.
+          </p>
+        </div>
+
+        <div class="music-item fade-in">
+          <h3>Composition Title One</h3>
+          <div class="meta">Piano — 2024</div>
+          <!-- Replace the div below with an <audio> tag or embed -->
+          <div class="placeholder-player">
+            Audio player — replace with &lt;audio src="your-file.mp3"&gt; or embed
+          </div>
+        </div>
+
+        <div class="music-item fade-in">
+          <h3>Composition Title Two</h3>
+          <div class="meta">Guitar — 2023</div>
+          <div class="placeholder-player">
+            Audio player — replace with &lt;audio src="your-file.mp3"&gt; or embed
+          </div>
+        </div>
+
+        <!-- Add more music items as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Email</a>
+      </div>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

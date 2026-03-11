@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Title — Your Name</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-hero {
+      padding: 8rem 0 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .project-hero .tags { margin-top: 1rem; }
+
+    .project-meta {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .project-meta dt {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.2rem;
+    }
+
+    .project-meta dd {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .project-body h2 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+      margin-top: 2.5rem;
+    }
+
+    .project-body h2:first-child { margin-top: 0; }
+
+    .project-body p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      max-width: 640px;
+    }
+
+    .project-body ul {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      padding-left: 1.25rem;
+    }
+
+    .project-body li { margin-bottom: 0.4rem; font-size: 0.92rem; }
+
+    .project-body img {
+      width: 100%;
+      border: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .project-body .image-caption {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: -1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+    }
+
+    .project-nav a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .project-nav a:hover { color: var(--accent); }
+
+    .back-link {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .back-link:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <a href="../index.html" class="logo"><span>Y</span>N</a>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#projects" class="active">Projects</a></li>
+        <li><a href="../education.html">Education</a></li>
+        <li><a href="../publications.html">Publications</a></li>
+        <li><a href="../creative.html">Creative</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Project Hero -->
+  <div class="project-hero">
+    <div class="container fade-in">
+      <a href="../index.html#projects" class="back-link">&larr; All projects</a>
+      <div class="section-label">Project</div>
+      <h1 class="section-title">Project Title Goes Here</h1>
+      <p class="section-intro">
+        A one-line summary of the project — what it is and why it matters.
+      </p>
+      <div class="tags">
+        <span class="tag">Aerospace</span>
+        <span class="tag">Systems Engineering</span>
+      </div>
+      <dl class="project-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>Lead Engineer</dd>
+        </div>
+        <div>
+          <dt>Timeline</dt>
+          <dd>2023 — Present</dd>
+        </div>
+        <div>
+          <dt>Status</dt>
+          <dd>Active</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <!-- Project Content -->
+  <section>
+    <div class="container">
+      <div class="project-body fade-in">
+
+        <h2>Overview</h2>
+        <p>
+          Describe the project in detail. What problem does it solve?
+          What was the context? Why was it important?
+        </p>
+
+        <!-- Optional image -->
+        <!-- <img src="images/project-photo.jpg" alt="Description of image" /> -->
+        <!-- <p class="image-caption">Caption for the image above.</p> -->
+
+        <h2>Approach</h2>
+        <p>
+          How did you tackle this? What was your methodology, architecture,
+          or design philosophy?
+        </p>
+        <ul>
+          <li>Key technical decision or approach one</li>
+          <li>Key technical decision or approach two</li>
+          <li>Key technical decision or approach three</li>
+        </ul>
+
+        <h2>Results</h2>
+        <p>
+          What was the outcome? Metrics, achievements, impact.
+          What did you learn?
+        </p>
+
+        <!-- Navigation between projects -->
+        <div class="project-nav">
+          <span></span>
+          <a href="project-two.html">Next project &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Email</a>
+      </div>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
