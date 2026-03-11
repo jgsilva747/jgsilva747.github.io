@@ -342,6 +342,44 @@ section:last-of-type { border-bottom: none; }
   color: var(--text-muted);
 }
 
+/* ===== Personal Bests ===== */
+.personal-bests {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.pb-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.pb-card:hover { border-color: var(--accent-dim); }
+
+.pb-sport {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.pb-value {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.pb-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
 /* ===== Footer ===== */
 footer {
   border-top: 1px solid var(--border);
