@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Interests — João Gonçalo Silva</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+  <!-- Background decoration layers -->
+  <canvas id="star-canvas" aria-hidden="true"></canvas>
+  <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-3" aria-hidden="true"></div>
 
   <!-- Navigation -->
   <nav>
@@ -298,5 +306,7 @@ with a subtle gold accent on the left.</pre>
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
 
+  <script src="background.js"></script>
 </body>
+
 </html>
